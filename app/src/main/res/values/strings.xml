@@ -1,0 +1,17 @@
+<resources>
+<string name="app_name">Calculator</string>
+<string name="field1">Number 1</string>
+<string name="field2">Number 2</string>
+<string name="operation1">Plus</string>
+<string name="operation2">Minus</string>
+<string name="operation3">Divide</string>
+<string name="operation4">Multiple</string>
+<string name="float_numbers">Use float numbers</string>
+<string name="signed_numbers">Use signed numbers</string>
+<string name="result_field">Result</string>
+<string name="calculate_button">Calculate</string>
+<string name="clear">Clear</string>
+<string name="operation_not_found_message">Please, choose an operation</string>
+<string name="empty_number_field_message">Please, enter the number</string>
+<string name="divide_by_zero_message">Cannot divide by zero</string>
+</resources>

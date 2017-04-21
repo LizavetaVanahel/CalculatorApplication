@@ -7,6 +7,6 @@ package com.example.vanahel.calculatorapplication.operation;
 public class MultipleOperation extends CalculatorOperation {
     @Override
     public float perform(float flNum1, float flNum2) {
-        return flNum1 / flNum2;
+        return flNum1 * flNum2;
     }
 }

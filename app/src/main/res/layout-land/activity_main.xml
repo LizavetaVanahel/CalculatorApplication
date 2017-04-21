@@ -38,17 +38,19 @@
         android:id="@+id/rg_operations_min_multpl_land">
 
         <RadioButton
-            android:id="@+id/radio_minus_land"
+            android:id="@+id/radio_minus"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:saveEnabled="true"
             android:hint="@string/operation2"
             />
 
         <RadioButton
-            android:id="@+id/radio_multiple_land"
+            android:id="@+id/radio_multiple"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:saveEnabled="true"
             android:hint="@string/operation4"
             />
     </RadioGroup>
@@ -61,16 +63,18 @@
         android:layout_alignEnd="@+id/calculator_layout_num1"
         android:id="@+id/rg_operations_plus_div_land">
         <RadioButton
-            android:id="@+id/radio_plus_land"
+            android:id="@+id/radio_plus"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:saveEnabled="true"
             android:hint="@string/operation1"
             />
 
         <RadioButton
-            android:id="@+id/radio_divide_land"
+            android:id="@+id/radio_divide"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:saveEnabled="true"
             android:hint="@string/operation3"
             />
     </RadioGroup>
@@ -81,7 +85,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="19dp"
         android:checked="true"
-        android:onClick="onCkeckboxClicked"
+        android:onClick="onClick"
         android:hint="@string/float_numbers"
         android:layout_below="@+id/rg_operations_plus_div_land"
         android:layout_alignStart="@+id/rg_operations_plus_div_land"
@@ -94,7 +98,7 @@
         android:checked="true"
         android:layout_alignStart="@+id/checkbox_float"
         android:layout_below="@+id/checkbox_float"
-        android:onClick="onCkeckboxClicked"
+        android:onClick="onClick"
         android:hint="@string/signed_numbers"
         android:layout_alignEnd="@+id/checkbox_float" />
 
@@ -112,8 +116,9 @@
         android:id="@+id/button_result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="@string/calculate_button"
-        style="?android:attr/colorButtonNormal"
+        android:text="@string/calculate_button"
+        android:background = "@drawable/select_button"
+        android:textColor="@color/select_button_color"
         android:layout_below="@+id/checkbox_signed"
         android:layout_alignStart="@+id/rg_operations_min_multpl_land"
         android:layout_alignEnd="@+id/rg_operations_min_multpl_land" />
@@ -123,8 +128,9 @@
         android:layout_width="80dp"
         android:layout_height="40dp"
         android:layout_alignParentTop="true"
+        android:background = "@drawable/select_button"
+        android:textColor="@color/select_button_color"
         android:text="Menu"
-        style="?android:attr/colorButtonNormal"
         android:layout_alignParentEnd="true" />
 
 </RelativeLayout>

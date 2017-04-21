@@ -15,4 +15,5 @@
     <string name="operation_not_found_message">Выберите выполняемую операцию</string>
     <string name="empty_number_field_message">Сначала заполните поля</string>
     <string name="divide_by_zero_message">Нельзя делить на ноль</string>
+    <string name="menu">Меню</string>
 </resources>

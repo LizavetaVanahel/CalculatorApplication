@@ -6,5 +6,6 @@ package com.example.vanahel.calculatorapplication.operation;
 
 public abstract class CalculatorOperation {
 
-    public abstract float perform (float flNum1, float flNum2);
+    public abstract float perform(float flNum1, float flNum2);
+
 }

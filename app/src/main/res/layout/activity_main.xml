@@ -3,7 +3,6 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent" >
 
-
     <EditText
         android:id="@+id/calculator_layout_num1"
         android:layout_width="wrap_content"
@@ -41,6 +40,7 @@
             android:id="@+id/radio_plus"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:saveEnabled="true"
             android:hint="@string/operation1"
             />
 
@@ -49,6 +49,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:saveEnabled="true"
             android:hint="@string/operation2"
             />
 
@@ -56,6 +57,7 @@
             android:id="@+id/radio_divide"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:saveEnabled="true"
             android:hint="@string/operation3"
             />
 
@@ -63,6 +65,7 @@
             android:id="@+id/radio_multiple"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:saveEnabled="true"
             android:hint="@string/operation4"
             />
     </RadioGroup>
@@ -75,7 +78,7 @@
         android:layout_below="@+id/rg_operations"
         android:layout_marginTop="21dp"
         android:checked="true"
-        android:onClick="onCkeckboxClicked"
+        android:onClick="onClick"
         android:hint="@string/float_numbers"/>
 
     <CheckBox
@@ -85,7 +88,7 @@
         android:checked="true"
         android:layout_alignStart="@+id/checkbox_float"
         android:layout_below="@+id/checkbox_float"
-        android:onClick="onCkeckboxClicked"
+        android:onClick="onClick"
         android:hint="@string/signed_numbers"/>
 
 
@@ -104,11 +107,12 @@
         android:id="@+id/button_result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="@string/calculate_button"
+        android:text="@string/calculate_button"
         android:layout_below="@+id/calculator_layout_result"
         android:layout_alignStart="@+id/calculator_layout_result"
+        android:background = "@drawable/select_button"
+        android:textColor="@color/select_button_color"
         android:layout_marginTop="12dp"
-        style="?android:attr/colorButtonNormal"
         android:layout_alignEnd="@+id/calculator_layout_result" />
 
     <Button
@@ -116,7 +120,8 @@
         android:layout_width="80dp"
         android:layout_height="40dp"
         android:layout_alignParentTop="true"
-        android:text="Menu"
-        style="?android:attr/colorButtonNormal"
+        android:background = "@drawable/select_button"
+        android:textColor="@color/select_button_color"
+        android:text="@string/menu"
         android:layout_alignParentEnd="true" />
 </RelativeLayout>

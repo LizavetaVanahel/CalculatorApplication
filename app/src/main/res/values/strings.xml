@@ -14,4 +14,5 @@
 <string name="operation_not_found_message">Please, choose an operation</string>
 <string name="empty_number_field_message">Please, enter the number</string>
 <string name="divide_by_zero_message">Cannot divide by zero</string>
+    <string name="menu">Menu</string>
 </resources>
